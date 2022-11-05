@@ -47,7 +47,7 @@ int randInRange(const int lower, const int upper) {
 	return (rand() % (upper - lower + 1)) + lower;
 }
 
-//Tell your CPU I'm sorry 
+// Tell your CPU I'm sorry 
 void wait(const int seconds) {
 	time_t goal = time(0) + seconds;
 	time_t now;
