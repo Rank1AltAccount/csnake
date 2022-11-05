@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -44,7 +44,7 @@ int manhattanDistance(const int x1, const int y1, const int x2, const int y2) {
 }
 
 int randInRange(const int lower, const int upper) {
-    return (rand() % (upper - lower + 1)) + lower;
+	return (rand() % (upper - lower + 1)) + lower;
 }
 
 //Tell your CPU I'm sorry 
@@ -67,7 +67,7 @@ void clearBuffer() {
 	int x;
 	int y;
 
-    memset(frameBuffer, WALL_CHAR, sizeof(frameBuffer)); 
+    	memset(frameBuffer, WALL_CHAR, sizeof(frameBuffer)); 
 
 	for (y = 1; y < HEIGHT - 1; y++) {
 		for (x = 1; x < WIDTH - 1; x++) {
